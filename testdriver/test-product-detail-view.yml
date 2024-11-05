@@ -1,0 +1,23 @@
+version: 4.0.80
+steps:
+  - prompt: Click on a product image or name from the listing.
+    commands:
+      - command: hover-text
+        text: No Thanks
+        description: close the pop-up
+        action: click
+  - prompt: Click on a product image or name from the listing.
+    commands:
+      - command: scroll-until-text
+        text: Shop Now
+        direction: down
+      - command: hover-text
+        text: Shop Now
+        description: link to product listing
+        action: click
+  - prompt: Click on a product image or name from the listing.
+    commands:
+      - command: hover-text
+        text: Most Loved
+        description: product name in the listing
+        action: click

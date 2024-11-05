@@ -1,0 +1,21 @@
+version: 4.0.80
+steps:
+  - prompt: Proceed to checkout from the cart page.
+    commands:
+      - command: hover-text
+        text: Bag (0)
+        description: link to the cart page
+        action: click
+  - prompt: Proceed to checkout from the cart page.
+    commands:
+      - command: hover-text
+        text: No Thanks
+        description: close the pop-up
+        action: click
+      - command: scroll-until-text
+        text: Checkout
+        direction: down
+      - command: hover-text
+        text: Checkout
+        description: proceed to checkout
+        action: click

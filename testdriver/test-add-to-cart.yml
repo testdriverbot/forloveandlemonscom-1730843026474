@@ -1,0 +1,22 @@
+version: 4.0.80
+steps:
+  - prompt: From the product detail page, click "Add to Cart."
+    commands:
+      - command: hover-text
+        text: No Thanks
+        description: close the pop-up offer
+        action: click
+  - prompt: From the product detail page, click "Add to Cart."
+    commands:
+      - command: scroll-until-text
+        text: Add to Cart
+        direction: down
+  - prompt: From the product detail page, click "Add to Cart."
+    commands:
+      - command: scroll-until-text
+        text: Add to Cart
+        direction: down
+      - command: hover-text
+        text: Add to Cart
+        description: button to add the product to the cart
+        action: click

@@ -1,0 +1,14 @@
+version: 4.0.80
+steps:
+  - prompt: Click "Apply Offer" on the pop-up.
+    commands:
+      - command: hover-text
+        text: Apply Offer
+        description: button on the pop-up
+        action: click
+  - prompt: >-
+      Assert that a sign-up form or confirmation message shows.  # Use the
+      content of the file from the environment
+    commands:
+      - command: assert
+        expect: a sign-up form or confirmation message is visible
